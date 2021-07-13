@@ -1,0 +1,1 @@
+module "github.com/doulepi123/cachemap"
