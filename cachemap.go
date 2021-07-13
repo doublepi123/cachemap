@@ -3,7 +3,7 @@ package cachemap
 import (
 	"container/list"
 	"errors"
-	"github.com/doulepi123/cachemap/priorityqueue"
+	"github.com/doublepi123/cachemap/priorityqueue"
 	"time"
 )
 
