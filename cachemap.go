@@ -1,9 +1,9 @@
 package cachemap
 
 import (
-	"cachemap/priorityqueue"
 	"container/list"
 	"errors"
+	"github.com/doulepi123/cachemap/priorityqueue"
 	"time"
 )
 
