@@ -1,11 +1,11 @@
 package priorityqueue
 
-type item struct {
+type Item struct {
 	priority int
 	value    interface{}
 }
 
-type PQueue []item
+type PQueue []Item
 
 func (pq PQueue) Len() int {
 	return len(pq)
@@ -19,7 +19,7 @@ func (pq PQueue) Swap(i, j int) {
 	pq[i], pq[j] = pq[j], pq[i]
 }
 func (pq *PQueue) Push(x interface{}) {
-	*pq = append(*pq, x.(item))
+	*pq = append(*pq, x.(Item))
 }
 func (pq *PQueue) Pop() interface{} {
 	temp := (*pq)[pq.Len()-1]
