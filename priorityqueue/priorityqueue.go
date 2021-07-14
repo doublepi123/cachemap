@@ -1,8 +1,8 @@
 package priorityqueue
 
 type Item struct {
-	priority int
-	value    interface{}
+	Priority int
+	Value    interface{}
 }
 
 type PQueue []Item
@@ -12,7 +12,7 @@ func (pq PQueue) Len() int {
 }
 
 func (pq PQueue) Less(i, j int) bool {
-	return pq[i].priority < pq[j].priority
+	return pq[i].Priority < pq[j].Priority
 }
 
 func (pq PQueue) Swap(i, j int) {
